@@ -4,7 +4,7 @@ class Gato
   attr_accessor :habitatCaseiro, :atacaHumanos, :alimentacao, :somQueFaz, :cor, :idade
   def initialize(cor, idade)
     @habitatCaseiro = true
-    @atacaHumanos = true
+    @atacaHumanos = false
     @alimentacao = "Ração"
     @somQueFaz = "Miau"
     @cor = cor
@@ -33,10 +33,6 @@ class Gato
 
   def getIdade()
     return self.idade
-  end
-
-  def getDarBote()
-    puts "Voce acabou de levar uma mordida!"
   end
  
 end
