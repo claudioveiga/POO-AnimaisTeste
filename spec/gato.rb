@@ -1,5 +1,7 @@
+require_relative "./animalCaseiro.rb"
 
-class Gato 
+
+class Gato < AnimalCaseiro
 
   attr_accessor :habitatCaseiro, :atacaHumanos, :alimentacao, :somQueFaz, :cor, :idade
   def initialize(cor, idade)

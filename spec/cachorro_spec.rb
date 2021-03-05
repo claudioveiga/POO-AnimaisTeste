@@ -1,41 +1,42 @@
-require_relative "./gato.rb"
+require_relative "./cachorro.rb"
+require_relative "./animalCaseiro.rb"
 
-describe "Classe Gato" do
+describe "Classe Cachorro" do
 
     before(:each) do
         # Arrange: "Preparando" o código.
-        @gatoBlues = Gato.new("Preto", 3)
+        @caoMax = Cachorro.new("Preto", 3)
     end
 
     it "Caso de teste: Validando o atributo habitatCaseiro" do
         # Assert: "Conferir" se é a resposta esperada.
-        #expect(@gatoBlues.getHabitatCaseiro).to be_truthy 
-        expect(true).to eql @gatoBlues.getHabitatCaseiro
+        #expect(@caoMax.getHabitatCaseiro).to be_truthy 
+        expect(true).to eql @caoMax.getHabitatCaseiro
     end
 
     it "Caso de teste: Validando o atributo atacaHumanos" do
         # Assert: "Conferir" se é a resposta esperada.
-        expect(true).to eql @gatoBlues.getAtacaHumanos
+        expect(false).to eql @caoMax.getAtacaHumanos
     end
 
     it "Caso de teste: Validanto o atributo alimentacao" do
         # Assert: "Conferir" se é a resposta esperada.
-        expect("Ração").to include @gatoBlues.getAlimentacao
+        expect("Ração").to include @caoMax.getAlimentacao
     end
 
     it "Caso de teste: Validando o atributo somQueFaz" do
         # Assert: "Conferir" se é a resposta esperada.
-        expect("Miau").to include @gatoBlues.getSomQueFaz
+        expect("Miau").to include @caoMax.getSomQueFaz
     end
 
     it "Caso de teste: Validando o atributo cor" do
         # Assert: "Conferir" se é a resposta esperada.
-        expect("Preto").to include @gatoBlues.getCor
+        expect("Preto").to include @caoMax.getCor
     end
 
     it "Caso de teste: Validando o atributo idade" do
         # Assert: "Conferir" se é a resposta esperada.
-        expect(3).to eql @gatoBlues.getIdade
+        expect(3).to eql @caoMax.getIdade
     end
 
 end

@@ -1,4 +1,5 @@
 require_relative "./gato.rb"
+require_relative "./animalCaseiro.rb"
 
 describe "Classe Gato" do
 
@@ -15,7 +16,7 @@ describe "Classe Gato" do
 
     it "Caso de teste: Validando o atributo atacaHumanos" do
         # Assert: "Conferir" se é a resposta esperada.
-        expect(true).to eql @gatoBlues.getAtacaHumanos
+        expect(false).to eql @gatoBlues.getAtacaHumanos
     end
 
     it "Caso de teste: Validanto o atributo alimentacao" do

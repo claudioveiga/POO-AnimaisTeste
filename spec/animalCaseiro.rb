@@ -1,3 +1,5 @@
+require_relative "./animal.rb"
+
 class AnimalCaseiro < Animal 
 
     attr_accessor :habitatCaseiro, :atacaHumanos, :alimentacao, :somQueFaz, :cor, :idade
