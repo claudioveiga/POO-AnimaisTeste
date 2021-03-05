@@ -26,7 +26,7 @@ describe "Classe Cachorro" do
 
     it "Caso de teste: Validando o atributo somQueFaz" do
         # Assert: "Conferir" se é a resposta esperada.
-        expect("Miau").to include @caoMax.getSomQueFaz
+        expect("Auau").to include @caoMax.getSomQueFaz
     end
 
     it "Caso de teste: Validando o atributo cor" do

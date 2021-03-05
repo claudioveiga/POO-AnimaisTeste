@@ -1,5 +1,5 @@
 require_relative "./gato.rb"
-require_relative "./animalCaseiro.rb"
+
 
 describe "Classe Gato" do
 
