@@ -5,12 +5,7 @@ class Gato < AnimalCaseiro
 
   attr_accessor :habitatCaseiro, :atacaHumanos, :alimentacao, :somQueFaz, :cor, :idade
   def initialize(cor, idade)
-    @habitatCaseiro = true
-    @atacaHumanos = false
-    @alimentacao = "Ração"
-    @somQueFaz = "Miau"
-    @cor = cor
-    @idade = idade
+    super("Miau", cor, idade)
   end
   
 end

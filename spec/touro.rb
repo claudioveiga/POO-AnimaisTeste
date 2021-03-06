@@ -4,12 +4,7 @@ class Touro < Animal
 
     attr_accessor :habitatCaseiro, :atacaHumanos, :alimentacao, :somQueFaz, :cor, :idade
     def initialize(cor, idade)
-        @habitatCaseiro = false
-        @atacaHumanos = true
-        @alimentacao = "Capim"
-        @somQueFaz = "Muuu"
-        @cor = cor
-        @idade = idade
+        super(false, true, "Capim", "Muuu", cor, idade)
     end
    
     def chifra()
